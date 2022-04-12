@@ -6,7 +6,13 @@
  **/
 public class Calcuator {
     public int compute(int num1, int num2, char symbol) {
-
-        return -1;
+        switch (symbol){
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            default:
+                throw new IllegalArgumentException();
+        }
     }
 }
